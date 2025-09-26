@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laskurit ja Muuntimet</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="Logo" class="logo">
+    </div>
+    <div class="container">
+        <h1>Laskurit ja Muuntimet</h1>
+        <label for="calculator-select">Valitse laskuri/muunnin:</label>
+        <select id="calculator-select" onchange="loadCalculator()">
+            <option value="">-- Valitse laskuri --</option>
+            <option value="dn-converter">DN-muunnin</option>
+            <option value="margin-calculator">Kate-laskuri</option>
+            <option value="flange-compatibility">Laippa-yhteensopivuuslaskuri</option>
+        </select>
+
+        <div id="calculator-content">
+            <!-- Laskurin sisältö ladataan tähän -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
